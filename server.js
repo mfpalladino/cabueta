@@ -72,7 +72,7 @@ function startGame() {
         
         player.socket.emit('gameStarted', {
           players: personalizedPlayers,
-          timeLimit: 15000
+          timeLimit: 60000
         });
       }
     });
@@ -83,7 +83,7 @@ function startGame() {
         gameState.gameEnded = true;
         io.emit('timeUp');
       }
-    }, 15000);
+    }, 60000);
   }
 }
 

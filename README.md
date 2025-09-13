@@ -11,7 +11,7 @@ Este projeto foi criado durante o **AWS Vibe Coding Dojo** no evento **ROGADX 20
 ## 🎮 Como Funciona
 
 - **3 Participantes**: Você + 1 humano + 1 Cabueta (bot da AWS Bedrock)
-- **Tempo Limite**: 15 segundos de conversa
+- **Tempo Limite**: 1 minuto de conversa
 - **Objetivo**: Descobrir quem é o bot disfarçado
 - **Mecânica**: Chat em tempo real com turnos livres
 
@@ -59,7 +59,7 @@ Abra seu navegador em: `http://localhost:3000`
 ## 🎯 Funcionalidades
 
 - ✅ Chat em tempo real
-- ✅ Timer de 15 segundos
+- ✅ Timer de 1 minuto
 - ✅ Bot inteligente via Bedrock
 - ✅ Interface responsiva
 - ✅ Sistema de pontuação
