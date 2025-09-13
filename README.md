@@ -6,7 +6,7 @@ Um jogo onde você precisa descobrir qual dos participantes é o "Cabueta" (chat
 
 ## 🎪 Desenvolvido no AWS Vibe Coding Dojo - ROGADX 2025
 
-Este projeto foi criado durante o **AWS Vibe Coding Dojo** no evento **ROGADX 2025**, onde nossa equipe desenvolveu esta aplicação inovadora que combina inteligência artificial com gamificação para criar uma experiência única de detecção de bots.
+Este projeto foi criado durante o **AWS Vibe Coding Dojo** no evento **ROGADX 2025**. Uma aplicação divertida que combina inteligência artificial com um jogo simples de detecção de bots.
 
 ## 🎮 Como Funciona
 
@@ -116,7 +116,7 @@ O servidor exibe logs úteis no console para debugging.
 
 ## 🏆 Equipe AWS Vibe Coding Dojo
 
-Desenvolvido com muito ☕ e 🧠 durante o hackathon no ROGADX 2025, este projeto representa o poder da colaboração e da inovação quando desenvolvedores se unem para criar algo único usando as tecnologias da AWS.
+Desenvolvido com muito ☕ e 🧠 durante o AWS Vibe Coding Dojo no ROGADX 2025.
 
 ---
 
