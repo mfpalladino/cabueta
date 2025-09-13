@@ -221,17 +221,22 @@ io.on('connection', (socket) => {
   });
 
   socket.on('makeGuess', (guessedPlayerId) => {
-    if (gameState.gameEnded) return;
-    
-    gameState.gameEnded = true;
     const guesser = gameState.players.find(p => p.id === socket.id);
     const isCorrect = guessedPlayerId === gameState.cabuetaId;
     const cabueta = gameState.players.find(p => p.id === gameState.cabuetaId);
     const guessedPlayer = gameState.players.find(p => p.id === guessedPlayerId);
     
+    if (!guesser || !cabueta || !guessedPlayer) {
+      console.log('ERRO: Alguma variável é undefined!');
+      return;
+    }
+    
     console.log(`${guesser.displayName} escolheu ${guessedPlayer.displayName}. Cabueta era ${cabueta.displayName}. Correto: ${isCorrect}`);
     
-    // Usa io.emit para garantir que todos recebam
+    // Termina o jogo após a primeira escolha
+    gameState.gameEnded = true;
+    
+    // Envia resultado imediatamente para todos
     io.emit('gameResult', {
       correct: isCorrect,
       cabuetaId: gameState.cabuetaId,

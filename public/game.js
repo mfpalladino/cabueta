@@ -5,7 +5,7 @@ let gameState = {
     players: [],
     gameStarted: false,
     gameEnded: false,
-    timeLeft: 15
+    timeLeft: 60
 };
 
 // Elementos DOM
@@ -39,7 +39,7 @@ function updateTimer() {
 }
 
 function startTimer() {
-    gameState.timeLeft = 15;
+    gameState.timeLeft = 60;
     timerInterval = setInterval(updateTimer, 1000);
 }
 
@@ -134,7 +134,7 @@ socket.on('gameStarted', (data) => {
     addMessage({
         playerId: 'system',
         playerName: 'Sistema',
-        text: '🎮 Jogo iniciado! Você tem 15 segundos para descobrir quem é o Cabueta. Comece a conversa!',
+        text: '🎮 Jogo iniciado! Você tem 1 minuto para descobrir quem é o Cabueta. Comece a conversa!',
         timestamp: new Date().toLocaleTimeString()
     });
 });
@@ -178,7 +178,7 @@ socket.on('gameReset', () => {
         players: [],
         gameStarted: false,
         gameEnded: false,
-        timeLeft: 15
+        timeLeft: 60
     };
     
     clearInterval(timerInterval);
